@@ -4,7 +4,8 @@ namespace ConsoleApp1
 {
     class Program
     {
-        public static (int sum, int product) Calc(int a, int b)
+        //Calculate method
+        public static (int sum, int product) Calculate(int a, int b)
         {
             return (a  + b, a * b);
         }
@@ -20,7 +21,7 @@ namespace ConsoleApp1
             int num2 = int.Parse(Console.ReadLine());
 
             // Call the Calculate method
-            var result = Calc(num1, num2);
+            var result = Calculate(num1, num2);
 
             // Display the results
             Console.WriteLine($"Sum: {result.sum}");
